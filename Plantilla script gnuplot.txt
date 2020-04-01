@@ -1,0 +1,23 @@
+#Plantilla para representar cualquier set de datos a traves de gnuplot
+
+#Establezco el lugar del archivo de datos
+datos='Nombre del archivo de datos'
+
+#Etiquetas
+
+#Titulo de gráfica
+set title "Titulo de la gráfica (No es necesario si luego pones un pie de foto en el informe)"
+
+#Nombre de los ejes
+set xlabel "Nombre del eje x [unidad del eje x]"
+set ylabel "Nombre del eje y [unidad del eje y]"
+unset key
+
+
+#En el caso de querer ajustar los datos a una funcion (se pedira en el enunciado del guión) utilizamos la siguiente linea
+f(x)=la funcion a la que vayamos a ajustar (consultar la ayuda de funciones de gnuplot)
+fit f(x) datos via (los parametros a los que ajustemos la función separados por ,)
+
+#Dibujo los datos usando las columnas 1,2,3,4
+#Los datos deben ir presentados en la forma datos de x (espacio) error de x (espacio) datos  de y (espacio) error de y
+plot f(x), datos using 1:2:3:4 with xyerrorbars

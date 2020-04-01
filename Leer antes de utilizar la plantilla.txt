@@ -1,0 +1,26 @@
+Esta plantilla está hecha para facilitar el trabajo a la hora de representar datos y ajustes en gnuplot en ningun momento contiene resoluciones especificas para ninguna practica.
+
+Editad la plantilla a vuestro gusto y guardad copias con los nombres que os resulte mas facil reconocer luego.
+
+gnuplt toma el caracter # como un comentario asi que ignora esa linea
+
+Cualquier '' o "" debe quedarse para que funcione asi que no las borreis
+
+Si se quieren poner simbolos especiales a la hora de poner los titulos o las unidades de algo se utiliza el comando {/Symbol *} donde * representa el simbolo a utilizar
+Mas información sobre simbolos y caracteres especiales aqui: 
+http://folk.uio.no/inf3330/scripting/doc/gnuplot/Kawano/label-e.html
+
+
+La información sobre funciones esta aquí:
+http://gnuplot.sourceforge.net/docs_4.2/node53.html
+
+
+Dicho esto antes de ejecutar la plantilla debe cambiarse el directorio de trabajo al lugar en el que estan localizados los datos. Es necesario que esta plantilla este localizada en el mismo lugar que los datos para su correcto funcionamiento.
+para hacer esto ejecutar el siguiente comando en la consola de gnuplot (windows) o en la shell (linux):
+
+cd 'Dirección absoluta de la carpeta que contiene los archivos 
+EJemplo:
+D:/usuario/Documents/TEB/Practica 0/Datos.txt'
+
+Por ultimo para utilizar un script en gnuplt despues de realizar el comando cd escribir lo siguiente en la terminal:
+load 'nombre del script'
